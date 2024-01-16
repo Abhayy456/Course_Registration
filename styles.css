@@ -1,0 +1,229 @@
+.FirstPage{
+    background: url(images/dtu_background.png);
+    background-size: cover;
+}
+#FirstHeading{
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin-top: 300px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.container a{
+    margin: 10px;
+    border-radius: 25px;
+    background: blanchedalmond;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: red;
+}
+
+.container a:hover{
+    margin: 10px;
+    border-radius: 25px;
+    background: lightblue;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+    color: darkblue;
+}
+
+.topnav{
+    background-color: rgb(245, 245, 248);
+    padding: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-grow: 1;
+}
+
+#Name_on_nav_bar{
+    width: 50%;
+    padding-left: 4em;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.links{
+    display: flex;
+    align-items: flex-end;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.links a{
+    text-decoration: none;
+    color: rgb(88, 114, 221);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.links a:hover{
+    text-decoration: underline;
+    color:red;
+}
+.student_dp{
+    width: 300px;
+    height: 300px;
+    border: solid 1rem orange;
+    margin-top: 16%;
+    margin-left: 20%;
+    border-style: groove;
+}
+.after_login_details{
+    display: flex;
+    flex-grow: 1;
+}
+.information_of_student{
+    margin: 7rem;
+}
+#heading_name_of_student_afterlogin{
+    color: red;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 4rem;
+}
+.general_details_of_student{
+    font-weight: bold;
+    font-size: 2rem;
+    border: solid orange;
+    padding: 1rem;
+    border-radius: 1rem;
+    border-width: 0.5rem;
+}
+.newnav{
+    background-color: rgb(245, 245, 248);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 2rem;
+    /* align-items: stretch;
+ */
+    align-items: center;
+
+}
+.course_list{
+    display:flex;
+    flex-direction: column;
+    gap: 1px;
+}
+.courselink{
+    border: solid black;
+    text-decoration: none;
+}
+
+
+.search input[type=text] {
+    /* width: 300px; */
+    /* height: 25px; */
+    height: 80%;
+    border-radius: 25px;
+    border: none;
+}
+ 
+.search {
+    float: right;
+    height: 90%;
+    margin-top: 0.2%;
+}
+ 
+.search button {
+    background-color: white;
+    color: black;
+    height: 80%;
+    padding-left: 1%;
+    /* border: none; */
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+.search button:hover{
+    background-color: black;
+    color: white;
+}
+
+.course-link{
+    color: black;
+    border: solid black;
+    padding: 2rem;
+    border-radius: 0.6rem;
+    margin-bottom: 1rem;
+    background-color:bisque;
+    /* display: flex;
+    justify-content: space-around; */
+    font-size: 1.5rem;
+}
+.primary_details_of_the_course{
+    display: flex;
+    /* justify-content: space-around; */
+}
+.course-link:hover{
+    transform: scale(1.02);
+    /* transform: translateY(-2rem); */
+}
+
+.course-name:hover{
+    text-decoration: underline;
+    color: red;
+}
+.course-code{
+    width:10%;
+    margin-left: 6rem;
+}
+.course-branch-name{
+    width: 20%;
+    margin-left: 10rem;
+}
+.course-slot{
+    margin-left: 5rem;
+}
+.primary_details_of_the_course button{
+    margin-left: 15rem;
+    cursor: pointer;
+}
+.course{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0.8rem;
+    border-color: black;
+    border: solid;
+    height: 5rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    background-color: antiquewhite;
+    font-size: 1.5rem;
+}
+.course-name{
+    text-decoration: none;
+    color: black;
+    width: 15%;
+    margin-left: 6rem;
+}
+.registration-header{
+    display: flex;
+    border: solid black;
+    border-radius: 0.8rem;
+    height: 5rem;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* border-right: 1r; */
+    font-size: 1.5rem;
+    background-color: white;
+}
+.subject-branch-column{
+    padding-left: 20rem;
+}
+.subject-name-column{
+    padding-left: 2rem;
+}
+.subject-code-column{
+    padding-left: 22rem;
+}
+.subject-credits-column{
+    padding-left: 18rem;
+}

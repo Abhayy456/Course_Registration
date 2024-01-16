@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register your courses</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="Registration.js"></script>
+  <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script> -->
+
+</head>
+
+<body style="background-color: rgb(99, 149, 190)">
+    <nav class="newnav" style="height: 3rem;">
+        <strong style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Courses</strong>
+        <div class="search" style="width: 40%;">
+            <input type="text" placeholder="Search for subjects" style="width: 60%;">
+            <button style="width: auto;">
+                Search
+            </button>
+        </div>
+        <div class="links" style="width:0%">
+            <a href="manageCourses.html">Manage Courses</a>
+        </div>
+        <div class="links" style="width:5%">
+            <a href="#" style="display: inline;">LogOut</a>
+        </div>
+    </nav>
+    <div class="course_list" style="width: 100%;">
+        <ul>
+            <div class="registration-header">
+                <div class="subject-name-column">Subject Name</div>
+                <div class="subject-code-column">Subject Code</div>
+                <div class="subject-branch-column">Subject Branch</div>
+                <div class="subject-credits-column">Subject Credits</div>
+                <!-- <div class="subject-name-column">Subject Name</div> -->
+            </div>
+            <template id="subject-template">
+            <li class="course-details">
+                <div class="course">
+                    <a class="course-name" href="#">DBMS</a>
+                    <div class="course-code">CO-123</div>
+                    <div class="course-branch-name">Computer Science</div>
+                    <div class="course-subject-credits">4</div>
+                    <button type = "course-register-button" class = "default-btn" style="border-radius: 1rem; font-size: 1rem;">
+                        Register
+                    </button>
+                </div>
+            </li>
+            </template>
+            <!-- <li class="course_link">
+                <div class="primary_details_of_the_course">
+                    <a class="course_name" href="#">OOPS</a>
+                    <div class="course_code">CO-132</div>
+                    <div class="branch_name">Computer Science</div>
+                    <div class="course_slot">E2</div>
+                    <button type = "button" data-name = "OOPS" data-credits = "4" class = "default-btn" style="border-radius: 1rem; font-size: 1rem;">
+                        Register
+                    </button>
+                </div>
+            </li> -->
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registered Courses</title>
+  <link rel="stylesheet" href="manageCourses.css">
+  <script defer src="manageCourses.js"></script>
+</head>
+
+<body>
+    <header class="manage-header">
+        <img src="images/dtu_logo.png" alt="hello">
+    </header>
+    <!-- <div class="container" -->
+    <div class="subjects-with-credit-calculation">
+        <div class="subjects">
+            <div class="subjects_header">
+                <span class="subjects-header-text-1">Course Details</span>
+            </div>
+            <div class="column-headings">
+                <div class="subject-name-column">Subject Name</div>
+                <div class="subject-branch-column">Subject Branch</div>
+                <div class="subject-credits-column">Subject Credits</div>
+                <div class="action-column">Action</div>
+            </div>
+            <!-- <hr> -->
+            <div class="registered-subject-list">
+                <template id="registered-subject">
+                    <div class="subject-details">
+                        <!-- <div class="subject-info"> -->
+                            <div class="subject-name">
+                                Machine Learning
+                            </div>
+                            <div class="subject-branch">
+                                Computer Science
+                            </div>
+                            <div class="credits">
+                                4
+                            </div>
+                            <button class="course-drop-button">
+                                drop
+                            </button>
+                        <!-- </div> -->
+                    </div>
+                </template>
+            </div>            
+        </div>
+
+        <div class="credit-box">
+            <h3 style="display: flex; justify-content: center;">Credit Details</h3
+            <hr>
+            <div class="credit-box-max-credits-details">
+                <div class="credit-box-max-credits-name">
+                    Max Credits:
+                </div>
+                <div class="credit-box-max-credits-value">
+                    32
+                </div>
+            </div>
+            <hr>
+            <div class="credit-box-min-credits-details">
+                <div class="credit-box-min-credits-name">
+                    Minimum Credits:
+                </div>
+                <div class="credit-box-min-credits-value">
+                    8
+                </div>
+            </div>
+            <hr>
+            <div class="credit-box-total-credits-details">
+                <div class="credit-box-total-credits-name">
+                    Total Credits:
+                </div>
+                <div class="credit-box-total-credits-value">
+                    0
+                </div>
+            </div>
+            <hr>
+            <div class="credit-box-remaining-credits-details">
+                <div class="credit-box-remaining-credits-name">
+                    Remaining Credits:
+                </div>
+                <div class="credit-box-remaining-credits-value">
+                    0
+                </div>
+            </div>
+            <!-- <div class="credit-box-max-credits-details">
+                <div class="credit-box-max-credits-name">
+                    Max Credits:
+                </div>
+                <div class="credit-box-max-credits-value">
+                    32
+                </div>
+            </div>
+            <div class="credit-box-max-credits-details">
+                <div class="credit-box-max-credits-name">
+                    Max Credits:
+                </div>
+                <div class="credit-box-max-credits-value">
+                    32
+                </div>
+            </div> -->
+        </div>
+
+    </div>
+</body>
+
+</html>

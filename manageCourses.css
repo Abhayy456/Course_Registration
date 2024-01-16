@@ -1,0 +1,140 @@
+.manage-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.subjects{
+    /* background-color: lightblu1e; */
+    width: 60%;
+}
+.subjects_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: rgb(111, 83, 83);
+    height: 3rem;
+    padding-bottom: 1rem;
+    border-radius: 0.8rem;
+    /* width: 90rem; */
+}
+.subjects-header-text-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    /* border-radius: 0.8rem;
+    border: solid black; */
+}
+/* .subjects-header-text-2{
+    padding-right: 10%;
+} */
+.subject-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(87, 60, 60);
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.8rem;
+    height: 3rem;
+    align-items: center;
+}
+.subject-name{
+    padding-left: 5%;
+}
+.subjects-with-credit-calculation{
+    display: flex;
+}
+.credit-box-max-credits-details{
+    display: flex;
+    justify-content: space-between;
+}
+.credit-box-total-credits-details{
+    display: flex;
+    justify-content: space-around;
+}
+.credit-box-max-credits-details{
+    display: flex;
+    justify-content: space-around;
+}
+.credit-box-min-credits-details{
+    display: flex;
+    justify-content: space-around;
+}
+.credit-box-remaining-credits-details{
+    display: flex;
+    justify-content: space-around;
+}
+.credit-box-total-credits-name{
+    width: 40%; 
+    margin-right: 0;
+}
+.credit-box-max-credits-name{
+    width: 40%; 
+    margin-right: 0;
+}
+.credit-box-min-credits-name{
+    width: 40%; 
+    margin-right: 0;
+}
+.credit-box-remaining-credits-name{
+    width: 40%; 
+    margin-right: 0;
+}
+.credit-box{
+    border: solid black;
+    border-radius: 0.6rem;
+    margin-left: 4rem;
+    margin-top: 5rem;
+    width: 25%;
+}
+.column-headings{
+    display: flex;
+    border: solid black;
+    border-radius: 0.8rem;
+    margin-top: 2rem;
+    height: 4rem;
+    align-items: center;
+    /* justify-content: space-around; */
+    background-color: rgb(87, 60, 60);
+    color: white;
+}
+.subject-name-column{
+    margin-left: 2rem;
+}
+.subject-branch-column{
+    margin-left: 15rem;
+}
+.subject-credits-column{
+    margin-left: 18rem;
+}
+.action-column{
+    margin-left: 8rem;
+    margin-right: 0.5rem;
+}
+.subject-name{
+    /* margin-left: 0.1rem; */
+    width: 10%;
+}
+.subject-branch{
+    /* margin-left: 0.4rem; */
+    width: 10%;
+    margin-left: 0.5%;
+}
+.course-drop-button{
+    border: solid black;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.course-drop-button:hover{
+    background: black;
+    color: white;
+}
+.credit-box{
+    display: flex;
+    flex-direction: column;
+}
