@@ -1,16 +1,16 @@
 .dtu-logo{
-    padding-left: 35%;
+    padding-left: 40rem;
 }
 .add-subject-header{
-    padding-left: 43%;
+    padding-left: 50rem;
     color: brown;
 }
 .add-subject-form{
     /* width: 60%; */
     /* display: flex;
     justify-content: center; */
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 25rem;
+    padding-right: 27rem;
 }
 /* .addSubjectButton{
     padding-bottom: 1rem;

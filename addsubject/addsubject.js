@@ -1,9 +1,11 @@
 const addSubjectForm=document.querySelector('#addSubjectForm');
 const subjects=fetchSubjectsFromLocalStorage();
+
 function fetchSubjectsFromLocalStorage(){
     const subjects=JSON.parse(localStorage.getItem('Subjects')??'[]');
     return subjects;
 }
+
 function Subject(id,name,branch,code,credits){
     this.id=id;
     this.name=name;
@@ -11,38 +13,35 @@ function Subject(id,name,branch,code,credits){
     this.code=code;
     this.credits=credits;
 }
-addSubjectForm.addEventListener('submit', function(event){
-    event.preventDefault();
-    const SubjectName=addSubjectForm.elements.subjectName.value?.trim();
-    console.log(SubjectName);
-    const SubjectBranch=addSubjectForm.elements.subjectBranch.value?.trim();
-    console.log(SubjectBranch);
-    const SubjectCode=addSubjectForm.elements.subjectCode.value?.trim();
-    console.log(SubjectCode);
-    const SubjectCredits=addSubjectForm.elements.subjectCredits.value;
-    console.log(SubjectCredits);
 
+addSubjectForm.addEventListener('submit', function(event){
+
+    event.preventDefault();
+
+    const SubjectName=addSubjectForm.elements.subjectName.value?.trim();
+    const SubjectBranch=addSubjectForm.elements.subjectBranch.value?.trim();
+    const SubjectCode=addSubjectForm.elements.subjectCode.value?.trim();
+    const SubjectCredits=addSubjectForm.elements.subjectCredits.value;
     const length=subjects.length;
-    let flag=0;
-    console.log(SubjectName);
-    console.log(subjects);
+
+    let FLAG=0;
     subjects.forEach(element =>{
         if(element.name===SubjectName){
             alert('Subject Already Added!');
-            flag=1;
+            FLAG=1;
             return;
         }
     });
     
-    if(flag==0){
-        let mmax=0;
-        console.log(subjects);
+    if(FLAG==0){
+        let MMAX=0;
         if(subjects){
             subjects.forEach((subject)=>{
-                mmax=Math.max(mmax,+subject.id);
+                MMAX=Math.max(MMAX,+subject.id);
             })
         }
-        const subject=new Subject(String(mmax+1),SubjectName,SubjectBranch,SubjectCode,SubjectCredits);
+        const subject=new Subject(String(MMAX+1),SubjectName,SubjectBranch,SubjectCode,SubjectCredits);
+
         subjects.push(subject);
         localStorage.setItem('Subjects', JSON.stringify(subjects));
         alert('New Subject Added!');

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register your courses</title>
+  <link rel="stylesheet" href="registercourses.css">
+  <script defer src="registercourses.js"></script>
+
+</head>
+
+<body>
+    <nav class="newnav">
+        <strong class="nav-bar-courses-text">Courses</strong>
+        <div class="search">
+            <input class="header-search-space" type="text" placeholder="Search for subjects">
+            <button class="header-search-button">
+                Search
+            </button>
+        </div>
+        <div class="manage-courses-link">
+            <a href="../managecourses/managecourses.html">Manage Courses</a>
+        </div>
+        <div class="logout-link">
+            <a href="#" >LogOut</a>
+        </div>
+    </nav>
+    <div class="course_list">
+        <ul>
+            <div class="registration-header">
+                <div class="subject-name-column">Subject Name</div>
+                <div class="subject-code-column">Subject Code</div>
+                <div class="subject-branch-column">Subject Branch</div>
+                <div class="subject-credits-column">Subject Credits</div>
+                <!-- <div class="subject-action-column">Action</div> -->
+                <!-- <div class="subject-name-column">Subject Name</div> -->
+            </div>
+            <template id="subject-template">
+            <li class="course-details">
+                <div class="course">
+                    <a class="course-name" href="#">DBMS</a>
+                    <div class="course-code">CO-123</div>
+                    <div class="course-branch-name">Computer Science</div>
+                    <div class="course-subject-credits">4</div>
+                    <button class = "default-btn">
+                        Register
+                    </button>
+                </div>
+            </li>
+            </template>
+        </ul>
+    </div>
+</body>
+
+</html>

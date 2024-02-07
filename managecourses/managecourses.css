@@ -5,7 +5,7 @@
 }
 .subjects{
     /* background-color: lightblu1e; */
-    width: 60%;
+    width: 70rem;
 }
 .subjects_header{
     display: flex;
@@ -33,7 +33,7 @@
 .subject-details{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     background-color: rgb(87, 60, 60);
     color: white;
     margin-top: 1rem;
@@ -42,9 +42,9 @@
     height: 3rem;
     align-items: center;
 }
-.subject-name{
-    padding-left: 5%;
-}
+/* .subject-name{
+    padding-left: 2rem;
+} */
 .subjects-with-credit-calculation{
     display: flex;
 }
@@ -102,7 +102,7 @@
     background-color: rgb(87, 60, 60);
     color: white;
 }
-.subject-name-column{
+/* .subject-name-column{
     margin-left: 2rem;
 }
 .subject-branch-column{
@@ -114,21 +114,17 @@
 .action-column{
     margin-left: 8rem;
     margin-right: 0.5rem;
-}
-.subject-name{
-    /* margin-left: 0.1rem; */
-    width: 10%;
-}
-.subject-branch{
-    /* margin-left: 0.4rem; */
-    width: 10%;
-    margin-left: 0.5%;
-}
+} */
+
 .course-drop-button{
     border: solid black;
-    border-radius: 0.5rem;
-    margin-right: 1rem;
+    /* border-radius: 0.5rem;
+    margin-right: 1rem; */
     cursor: pointer;
+    margin-right: 1rem;
+    width: 20%;
+    border-radius: 0.5rem;
+    height: 1.5rem;
 }
 .course-drop-button:hover{
     background: black;
@@ -137,4 +133,36 @@
 .credit-box{
     display: flex;
     flex-direction: column;
+}
+.subject-name-column{
+    width: 20%;
+
+    margin-left: 1rem;;
+}
+.subject-branch-column{
+
+    width: 40%;
+}
+.subject-credits-column{
+
+    width: 20%
+}
+.action-column{
+
+    margin-right: 1rem;;
+    width: 20%;
+}
+.subject-name{
+    width: 20%;
+
+    margin-left: 1rem;;
+}
+.subject-branch{
+    width: 40%;
+}
+.credits{
+    width: 20%
+}
+.registered-subject{
+    height: 2rem;
 }
