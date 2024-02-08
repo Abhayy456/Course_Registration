@@ -24,6 +24,7 @@ const dropCourseHandler=(event)=>{
 }
 
 displaySubjects();
+// hello
 
 function displaySubjects(){
     subject_list.forEach((entry)=>{
