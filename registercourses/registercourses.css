@@ -1,7 +1,9 @@
+
 .FirstPage{
     background: url(images/dtu_background.png);
     background-size: cover;
 }
+
 #FirstHeading{
     color: black;
     font-size: 40px;
@@ -10,11 +12,13 @@
     text-align: center;
     margin-top: 300px;
 }
+
 .container{
     display: flex;
     justify-content: center;
     margin: 10px;
 }
+
 .container a{
     margin: 10px;
     border-radius: 25px;
@@ -66,10 +70,12 @@
     color: rgb(88, 114, 221);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 .links a:hover{
     text-decoration: underline;
     color:red;
 }
+
 .student_dp{
     width: 300px;
     height: 300px;
@@ -78,18 +84,22 @@
     margin-left: 20%;
     border-style: groove;
 }
+
 .after_login_details{
     display: flex;
     flex-grow: 1;
 }
+
 .information_of_student{
     margin: 7rem;
 }
+
 #heading_name_of_student_afterlogin{
     color: red;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 4rem;
 }
+
 .general_details_of_student{
     font-weight: bold;
     font-size: 2rem;
@@ -98,6 +108,7 @@
     border-radius: 1rem;
     border-width: 0.5rem;
 }
+
 .newnav{
     background-color: rgb(245, 245, 248);
     display: flex;
@@ -106,17 +117,18 @@
     align-items: center;
     height: 3rem;
 }
+
 .course_list{
     display:flex;
     flex-direction: column;
     gap: 1px;
     width: 100%;
 }
+
 .courselink{
     border: solid black;
     text-decoration: none;
 }
-
 
 .search input[type=text] {
     height: 80%;
@@ -137,6 +149,7 @@
     cursor: pointer;
     border-radius: 0.5rem;
 }
+
 .search button:hover{
     background-color: black;
     color: white;
@@ -151,9 +164,11 @@
     background-color:bisque;
     font-size: 1.5rem;
 }
+
 .primary_details_of_the_course{
     display: flex;
 }
+
 .course-link:hover{
     transform: scale(1.02);
 }
@@ -162,20 +177,25 @@
     text-decoration: underline;
     color: red;
 }
+
 .course-code{
     width: 10%;
 }
+
 .course-branch-name{
     width: 20%;
     margin-left: 8rem;
 }
+
 .course-slot{
     width: 10%;
 }
+
 .primary_details_of_the_course button{
     margin-left: 15rem;
     cursor: pointer;
 }
+
 .course{
     display: flex;
     border-radius: 0.8rem;
@@ -187,12 +207,14 @@
     background-color: antiquewhite;
     font-size: 1.5rem;
 }
+
 .course-name{
     text-decoration: none;
     color: black;
     width: 20%;
     margin-left: 6rem;
 }
+
 .registration-header{
     display: flex;
     border: solid black;
@@ -201,48 +223,62 @@
     align-items: center;
     font-size: 1.5rem;
     background-color: white;
+    margin-top: 1rem;
 }
+
 .subject-branch-column{
     width: 20%;
 }
+
 .subject-name-column{
     padding-left: 2rem;
     width: 20%;
 }
+
 .subject-code-column{
     width: 20%;
 }
+
 .subject-credits-column{
     width: 20%;
 }
+
 .course-subject-credits{
     width: 20%;
     margin-left: 2rem;
 }
+
 .default-btn{
     width: 10%;
     border-radius: 1rem; 
     font-size: 1rem
 }
+
 .manage-courses-link{
     width: 0%;
     text-decoration: none;
 }
+
 body{
     background-color:  rgb(99, 149, 190);
 }
+
 .nav-bar-courses-text{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 .header-search-space{
     width: 60%;
 }
+
 .header-search-button{
     width: auto;
 }
+
 .manage-courses-link a{
     text-decoration: none;
 }
+
 .logout-link a{
     display: flex;
     align-items: flex-end;
@@ -258,6 +294,7 @@ body{
     color: red;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 .manage-courses-link a{
     display: flex;
     align-items: flex-end;

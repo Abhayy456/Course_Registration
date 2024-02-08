@@ -3,18 +3,18 @@ const map1 = new Map(JSON.parse(localStorage.myMap));
 
 const dropCourseHandler=(event)=>{
     const subject=event.target.parentElement;
-    let INDEX=0;
+    let index=0;
     let total_credits=localStorage.getItem('total_credits');
 
-    subject_list.forEach(element => {
-        if(element.id===subject.id){
-            total_credits-=map1.get(element.id).credits;
+    subject_list.forEach(subjectInArray => {
+        if(subjectInArray.id===subject.id){
+            total_credits-=map1.get(subjectInArray.id).credits;
             localStorage.setItem('total_credits', JSON.stringify(total_credits));
             return;
         }
-        INDEX++;
+        index++;
     });
-    subject_list.splice(INDEX,1);
+    subject_list.splice(index,1);
 
     alert('Subject Dropped Successfully!');
     saveSubjectListInStorage();
@@ -24,12 +24,11 @@ const dropCourseHandler=(event)=>{
 }
 
 displaySubjects();
-// hello
 
 function displaySubjects(){
-    subject_list.forEach((entry)=>{
-        const id=entry.id;
-        const subject=new Subject(entry.id, map1.get(id).name, map1.get(id).branch, map1.get(id).credits);
+    subject_list.forEach((subjectInArray)=>{
+        const id=subjectInArray.id;
+        const subject=new Subject(subjectInArray.id, map1.get(id).name, map1.get(id).branch, map1.get(id).credits);
         createSubjectElement(subject);
     })
 }

@@ -1,3 +1,10 @@
+
+const fetchSubjectListFromStorage = () => {
+    const subject_list_JSON=localStorage.getItem('subject_list')??'[]';
+    const subject_list=JSON.parse(subject_list_JSON);
+    return subject_list;
+}
+
 const subject_list=fetchSubjectListFromStorage();
 const map1 = new Map();
 
@@ -9,17 +16,11 @@ function Subject(id, name, branch, code, credits){
     this.credits=credits;
 }
 
-function fetchSubjectListFromStorage(){
-    const subject_list_JSON=localStorage.getItem('subject_list')??'[]';
-    const subject_list=JSON.parse(subject_list_JSON);
-    return subject_list;
-}
-
 function saveSubjectListInStorage(){
     localStorage.setItem('subject_list', JSON.stringify(subject_list));
     let total_credits=0;
-    subject_list.forEach((entry)=>{
-        const id=entry.id;
+    subject_list.forEach((subjectInArray)=>{
+        const id=subjectInArray.id;
         total_credits+=Number(map1.get(id).credits);
     })
     localStorage.setItem('total_credits', JSON.stringify(total_credits));
@@ -34,17 +35,17 @@ const registerButtonHandler=(event)=>{
     const subject=event.target.parentElement;
     const subjectId=subject.id;
     let length=subject_list.length;
-    let FLAG=0;
+    let flag=0;
     if(length>0){
-        subject_list.forEach((entry)=>{
-            if(entry.id===subjectId){
+        subject_list.forEach((subjectInArray)=>{
+            if(subjectInArray.id===subjectId){
                 alert('Subject Already Registered!');
-                FLAG=1;
+                flag=1;
                 return;
             }
         })
     }
-    if(FLAG==0){
+    if(flag==0){
         subject_list.push({
             id: subjectId,
         })

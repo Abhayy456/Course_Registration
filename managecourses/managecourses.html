@@ -5,15 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Registered Courses</title>
-  <link rel="stylesheet" href="managecourses.css">
-  <script defer src="managecourses.js"></script>
+  <link rel="stylesheet" href="manageCourses.css">
+  <script defer src="manageCourses.js"></script>
 </head>
 
 <body>
     <header class="manage-header">
         <img src="images/dtu_logo.png" alt="hello">
     </header>
-    <!-- <div class="container" -->
     <div class="subjects-with-credit-calculation">
         <div class="subjects">
             <div class="subjects_header">
@@ -25,11 +24,9 @@
                 <div class="subject-credits-column">Subject Credits</div>
                 <div class="action-column">Action</div>
             </div>
-            <!-- <hr> -->
             <div class="registered-subject-list">
                 <template id="registered-subject">
                     <div class="subject-details">
-                        <!-- <div class="subject-info"> -->
                             <div class="subject-name">
                                 Machine Learning
                             </div>
@@ -42,15 +39,14 @@
                             <button class="course-drop-button">
                                 drop
                             </button>
-                        <!-- </div> -->
                     </div>
                 </template>
             </div>            
         </div>
 
         <div class="credit-box">
-            <h3 style="display: flex; justify-content: center;">Credit Details</h3
-            <hr >
+            <h3 class="credit-details-heading">Credit Details</h3>
+            <hr>
             <div class="credit-box-max-credits-details">
                 <div class="credit-box-max-credits-name">
                     Max Credits:
@@ -86,22 +82,6 @@
                     0
                 </div>
             </div>
-            <!-- <div class="credit-box-max-credits-details">
-                <div class="credit-box-max-credits-name">
-                    Max Credits:
-                </div>
-                <div class="credit-box-max-credits-value">
-                    32
-                </div>
-            </div>
-            <div class="credit-box-max-credits-details">
-                <div class="credit-box-max-credits-name">
-                    Max Credits:
-                </div>
-                <div class="credit-box-max-credits-value">
-                    32
-                </div>
-            </div> -->
         </div>
 
     </div>

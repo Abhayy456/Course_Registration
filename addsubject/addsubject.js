@@ -1,10 +1,14 @@
+// import {helper} from "../helper";
+// console.log(helper);
 const addSubjectForm=document.querySelector('#addSubjectForm');
-const subjects=fetchSubjectsFromLocalStorage();
 
-function fetchSubjectsFromLocalStorage(){
-    const subjects=JSON.parse(localStorage.getItem('Subjects')??'[]');
+const fetchSubjectsFromLocalStorage = () => {
+    const subjects = JSON.parse(localStorage.getItem('Subjects') ?? '[]');
     return subjects;
-}
+};
+
+
+const subjects=fetchSubjectsFromLocalStorage();
 
 function Subject(id,name,branch,code,credits){
     this.id=id;
@@ -12,6 +16,15 @@ function Subject(id,name,branch,code,credits){
     this.branch=branch;
     this.code=code;
     this.credits=credits;
+}
+
+function validateForm(){
+    const creditInput=addSubjectForm.elements.subjectCredits.value;
+    if(isNaN(creditInput)){
+        alert("Credits should be numerical!");
+        return 0;
+    }
+    return 1;
 }
 
 addSubjectForm.addEventListener('submit', function(event){
@@ -24,26 +37,33 @@ addSubjectForm.addEventListener('submit', function(event){
     const SubjectCredits=addSubjectForm.elements.subjectCredits.value;
     const length=subjects.length;
 
-    let FLAG=0;
-    subjects.forEach(element =>{
-        if(element.name===SubjectName){
+    if(!validateForm()){
+        addSubjectForm.reset();
+        return;
+    }
+    let flag=0;
+    subjects.forEach(subjectInArray =>{
+        if(subjectInArray.name===SubjectName){
             alert('Subject Already Added!');
-            FLAG=1;
+            flag=1;
             return;
         }
     });
     
-    if(FLAG==0){
-        let MMAX=0;
+    if(flag==0){
+        // let mmax=helper(subjects);
+        let mmax=0;
         if(subjects){
             subjects.forEach((subject)=>{
-                MMAX=Math.max(MMAX,+subject.id);
+                mmax=Math.max(mmax,+subject.id);
             })
         }
-        const subject=new Subject(String(MMAX+1),SubjectName,SubjectBranch,SubjectCode,SubjectCredits);
+
+        const subject=new Subject(String(mmax+1),SubjectName,SubjectBranch,SubjectCode,SubjectCredits);
 
         subjects.push(subject);
         localStorage.setItem('Subjects', JSON.stringify(subjects));
         alert('New Subject Added!');
+        addSubjectForm.reset();
     }
 })
