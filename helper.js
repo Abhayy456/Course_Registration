@@ -5,7 +5,7 @@ export const helper = (array) => {
         return 0;
     }
     else{
-        array.array.forEach(element => {
+        array.forEach(element => {
             mmax=Math.max(mmax, +element.id);
         });
         return mmax;

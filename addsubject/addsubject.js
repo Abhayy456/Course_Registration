@@ -1,5 +1,5 @@
-// import {helper} from "../helper";
-// console.log(helper);
+import {helper} from "../helper.js";
+console.log(helper);
 const addSubjectForm=document.querySelector('#addSubjectForm');
 
 const fetchSubjectsFromLocalStorage = () => {
@@ -25,11 +25,11 @@ function validateForm(){
         return 0;
     }
     return 1;
+
 }
-
 addSubjectForm.addEventListener('submit', function(event){
-
     event.preventDefault();
+
 
     const SubjectName=addSubjectForm.elements.subjectName.value?.trim();
     const SubjectBranch=addSubjectForm.elements.subjectBranch.value?.trim();
@@ -51,13 +51,7 @@ addSubjectForm.addEventListener('submit', function(event){
     });
     
     if(flag==0){
-        // let mmax=helper(subjects);
-        let mmax=0;
-        if(subjects){
-            subjects.forEach((subject)=>{
-                mmax=Math.max(mmax,+subject.id);
-            })
-        }
+        let mmax=helper(subjects);
 
         const subject=new Subject(String(mmax+1),SubjectName,SubjectBranch,SubjectCode,SubjectCredits);
 
