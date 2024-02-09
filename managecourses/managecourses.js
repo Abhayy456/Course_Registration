@@ -4,12 +4,12 @@ const map1 = new Map(JSON.parse(localStorage.myMap));
 const dropCourseHandler=(event)=>{
     const subject=event.target.parentElement;
     let index=0;
-    let total_credits=localStorage.getItem('total_credits');
+    let totalCredits=localStorage.getItem('totalCredits');
 
     subject_list.forEach(subjectInArray => {
         if(subjectInArray.id===subject.id){
-            total_credits-=map1.get(subjectInArray.id).credits;
-            localStorage.setItem('total_credits', JSON.stringify(total_credits));
+            totalCredits-=map1.get(subjectInArray.id).credits;
+            localStorage.setItem('totalCredits', JSON.stringify(totalCredits));
             return;
         }
         index++;
@@ -18,8 +18,8 @@ const dropCourseHandler=(event)=>{
 
     alert('Subject Dropped Successfully!');
     saveSubjectListInStorage();
-    document.querySelector('.credit-box-total-credits-value').innerHTML=localStorage.getItem('total_credits');
-    document.querySelector('.credit-box-remaining-credits-value').innerHTML=Math.max(0,8-total_credits);
+    document.querySelector('.credit-box__total-credits-value').innerHTML=localStorage.getItem('totalCredits');
+    document.querySelector('.credit-box__remaining-credits-value').innerHTML=Math.max(0,8-totalCredits);
     event.target.parentElement.remove();
 }
 
@@ -53,19 +53,19 @@ function Subject(id, name, branch, credits){
 function createSubjectElement(Subject){
     const template=document.querySelector('#registered-subject');
     const clone=document.importNode(template.content, true);
-    const subject=clone.querySelector('.subject-details');
-    const subject_name=clone.querySelector('.subject-name');
-    const subject_branch=clone.querySelector('.subject-branch');
-    const subject_credits=clone.querySelector('.credits');
-    const subject_drop_btn=clone.querySelector('.course-drop-button');
+    const subject=clone.querySelector('.subjects__subject-details');
+    const subject_name=clone.querySelector('.subjects__subject-name');
+    const subject_branch=clone.querySelector('.subjects__subject-branch');
+    const subject_credits=clone.querySelector('.subjects__credits');
+    const subject_drop_btn=clone.querySelector('.subjects__course-drop-button');
 
-    let total_credits=JSON.parse(localStorage.getItem('total_credits'));
-    document.querySelector('.credit-box-total-credits-value').innerHTML=localStorage.getItem('total_credits');
-    document.querySelector('.credit-box-remaining-credits-value').innerHTML=`${Math.max(0,8-total_credits)}`;
+    let totalCredits=JSON.parse(localStorage.getItem('totalCredits'));
+    document.querySelector('.credit-box__total-credits-value').innerHTML=localStorage.getItem('totalCredits');
+    document.querySelector('.credit-box__remaining-credits-value').innerHTML=`${Math.max(0,8-totalCredits)}`;
     subject.setAttribute('id', Subject.id);
     subject_name.textContent=Subject.name;
     subject_branch.textContent=Subject.branch;
     subject_credits.textContent=Subject.credits;
     subject_drop_btn.addEventListener('click', dropCourseHandler);
-    document.querySelector('.registered-subject-list').append(subject);
+    document.querySelector('.subjects__registered-subject-list').append(subject);
 }

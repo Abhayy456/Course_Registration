@@ -11,32 +11,32 @@
 
 <body>
     <header class="manage-header">
-        <img src="images/dtu_logo.png" alt="hello">
+        <img class="manage-header__logo" src="images/dtu_logo.png" alt="hello">
     </header>
     <div class="subjects-with-credit-calculation">
         <div class="subjects">
-            <div class="subjects_header">
-                <span class="subjects-header-text-1">Course Details</span>
+            <div class="subjects__header">
+                <span class="subjects__header-text-1">Course Details</span>
             </div>
-            <div class="column-headings">
-                <div class="subject-name-column">Subject Name</div>
-                <div class="subject-branch-column">Subject Branch</div>
-                <div class="subject-credits-column">Subject Credits</div>
-                <div class="action-column">Action</div>
+            <div class="subjects__column-headings">
+                <div class="subjects__subject-name-column">Subject Name</div>
+                <div class="subjects__subject-branch-column">Subject Branch</div>
+                <div class="subjects__subject-credits-column">Subject Credits</div>
+                <div class="subjects__action-column">Action</div>
             </div>
-            <div class="registered-subject-list">
+            <div class="subjects__registered-subject-list">
                 <template id="registered-subject">
-                    <div class="subject-details">
-                            <div class="subject-name">
+                    <div class="subjects__subject-details">
+                            <div class="subjects__subject-name">
                                 Machine Learning
                             </div>
-                            <div class="subject-branch">
+                            <div class="subjects__subject-branch">
                                 Computer Science
                             </div>
-                            <div class="credits">
+                            <div class="subjects__credits">
                                 4
                             </div>
-                            <button class="course-drop-button">
+                            <button class="subjects__course-drop-button">
                                 drop
                             </button>
                     </div>
@@ -45,40 +45,40 @@
         </div>
 
         <div class="credit-box">
-            <h3 class="credit-details-heading">Credit Details</h3>
+            <h3 class="credit-box__credit-details-heading">Credit Details</h3>
             <hr>
-            <div class="credit-box-max-credits-details">
-                <div class="credit-box-max-credits-name">
+            <div class="credit-box__max-credits-details">
+                <div class="credit-box__max-credits-name">
                     Max Credits:
                 </div>
-                <div class="credit-box-max-credits-value">
+                <div class="credit-box__max-credits-value">
                     32
                 </div>
             </div>
             <hr>
-            <div class="credit-box-min-credits-details">
-                <div class="credit-box-min-credits-name">
+            <div class="credit-box__min-credits-details">
+                <div class="credit-box__min-credits-name">
                     Minimum Credits:
                 </div>
-                <div class="credit-box-min-credits-value">
+                <div class="credit-box__min-credits-value">
                     8
                 </div>
             </div>
             <hr>
-            <div class="credit-box-total-credits-details">
-                <div class="credit-box-total-credits-name">
+            <div class="credit-box__total-credits-details">
+                <div class="credit-box__total-credits-name">
                     Total Credits:
                 </div>
-                <div class="credit-box-total-credits-value">
+                <div class="credit-box__total-credits-value">
                     0
                 </div>
             </div>
             <hr>
-            <div class="credit-box-remaining-credits-details">
-                <div class="credit-box-remaining-credits-name">
+            <div class="credit-box__remaining-credits-details">
+                <div class="credit-box__remaining-credits-name">
                     Remaining Credits:
                 </div>
-                <div class="credit-box-remaining-credits-value">
+                <div class="credit-box__remaining-credits-value">
                     0
                 </div>
             </div>

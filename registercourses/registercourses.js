@@ -18,12 +18,12 @@ function Subject(id, name, branch, code, credits){
 
 function saveSubjectListInStorage(){
     localStorage.setItem('subject_list', JSON.stringify(subject_list));
-    let total_credits=0;
+    let totalCredits=0;
     subject_list.forEach((subjectInArray)=>{
         const id=subjectInArray.id;
-        total_credits+=Number(map1.get(id).credits);
+        totalCredits+=Number(map1.get(id).credits);
     })
-    localStorage.setItem('total_credits', JSON.stringify(total_credits));
+    localStorage.setItem('totalCredits', JSON.stringify(totalCredits));
 }
 
 function fetchSubjectFromLocalStorage(){

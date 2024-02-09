@@ -9,7 +9,7 @@
     width: 70rem;
 }
 
-.subjects_header{
+.subjects__header{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -19,7 +19,7 @@
     border-radius: 0.8rem;
 }
 
-.subjects-header-text-1{
+.subjects__header-text-1{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@
     font-size: 1.5rem;
 }
 
-.subject-details{
+.subjects__subject-details{
     display: flex;
     flex-direction: row;
     background-color: rgb(87, 60, 60);
@@ -43,47 +43,47 @@
     display: flex;
 }
 
-.credit-box-max-credits-details{
+.credit-box__max-credits-details{
     display: flex;
     justify-content: space-between;
 }
 
-.credit-box-total-credits-details{
+.credit-box__total-credits-details{
     display: flex;
     justify-content: space-around;
 }
 
-.credit-box-max-credits-details{
+.credit-box__max-credits-details{
     display: flex;
     justify-content: space-around;
 }
 
-.credit-box-min-credits-details{
+.credit-box__min-credits-details{
     display: flex;
     justify-content: space-around;
 }
 
-.credit-box-remaining-credits-details{
+.credit-box__remaining-credits-details{
     display: flex;
     justify-content: space-around;
 }
 
-.credit-box-total-credits-name{
+.credit-box__total-credits-name{
     width: 40%; 
     margin-right: 0;
 }
 
-.credit-box-max-credits-name{
+.credit-box__max-credits-name{
     width: 40%; 
     margin-right: 0;
 }
 
-.credit-box-min-credits-name{
+.credit-box__min-credits-name{
     width: 40%; 
     margin-right: 0;
 }
 
-.credit-box-remaining-credits-name{
+.credit-box__remaining-credits-name{
     width: 40%; 
     margin-right: 0;
 }
@@ -96,7 +96,7 @@
     width: 25%;
 }
 
-.column-headings{
+.subjects__column-headings{
     display: flex;
     border: solid black;
     border-radius: 0.8rem;
@@ -107,7 +107,7 @@
     color: white;
 }
 
-.course-drop-button{
+.subjects__course-drop-button{
     border: solid black;
     cursor: pointer;
     margin-right: 1rem;
@@ -116,7 +116,7 @@
     height: 1.5rem;
 }
 
-.course-drop-button:hover{
+.subjects__course-drop-button:hover{
     background: black;
     color: white;
 }
@@ -126,34 +126,34 @@
     flex-direction: column;
 }
 
-.subject-name-column{
+.subjects__subject-name-column{
     width: 20%;
     margin-left: 1rem;;
 }
 
-.subject-branch-column{
+.subjects__subject-branch-column{
     width: 40%;
 }
 
-.subject-credits-column{
+.subjects__subject-credits-column{
     width: 20%
 }
 
-.action-column{
+.subjects__action-column{
     margin-right: 1rem;;
     width: 20%;
 }
 
-.subject-name{
+.subjects__subject-name{
     width: 20%;
     margin-left: 1rem;;
 }
 
-.subject-branch{
+.subjects__subject-branch{
     width: 40%;
 }
 
-.credits{
+.subjects__credits{
     width: 20%
 }
 
@@ -161,7 +161,7 @@
     height: 2rem;
 }
 
-.credit-details-heading{
+.credit-box__credit-details-heading{
     display: flex;
     justify-content: center;
 }
